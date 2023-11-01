@@ -16,6 +16,10 @@ Intial Release
 
 Fixing vsce
 
+### 1.1.1
+
+Adds double slash comments
+
 ---
 
 ## Re-building and testing locally

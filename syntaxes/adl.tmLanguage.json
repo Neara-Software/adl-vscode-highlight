@@ -8,6 +8,10 @@
             "end": "\\*/"
         },
         {
+            "name": "comment.line.double-slash.adl",
+            "match": "//.*$"
+        },
+        {
             "name": "comment.line.triple-slash.adl",
             "match": "///.*$"
         },
