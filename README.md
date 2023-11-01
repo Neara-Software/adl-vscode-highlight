@@ -27,7 +27,7 @@ Adds double slash comments
 1. Call `vsce package` (`npm install -g vsce` if not installed)
 to generate a `.vsix` file.
 
-2. Open VS Cod
+2. Open VS Code
 
 3. In extensions view, click '...' (more actions) button 
 and select "Install from VSIX..."
