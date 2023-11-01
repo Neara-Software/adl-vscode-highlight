@@ -37,29 +37,16 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Intial Release 
 
 ---
 
-## Working with Markdown
+## Re-building and testing locally
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+1. Call `vsce package` (`npm install -g vsce` if not installed) to generate a `.vsix` file. 
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+2. Open VS Cod
 
-## For more information
+3. In extensions view, click '...' (more actions) button and selecte "Install from VSIX..."
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+4. Navigate to extension directory, select `.vsix` file and click "Install"
