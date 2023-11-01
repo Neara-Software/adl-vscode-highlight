@@ -3,6 +3,7 @@
     "displayName": "adl-language",
     "description": "",
     "version": "0.0.1",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.83.0"
     },
