@@ -1,32 +1,36 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "ADL",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.adl",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.adl",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.adl",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": ""
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "ADL",
+    "patterns": [
+        {
+            "name": "comment.block.adl",
+            "begin": "/\\*",
+            "end": "\\*/"
+        },
+        {
+            "name": "comment.line.triple-slash.adl",
+            "match": "///.*$"
+        },
+        {
+            "name": "keyword.control.adl",
+            "match": "\\b(?:module|import|struct|union|type|newtype|Vector|StringMap|Nullable|TypeToken)\\b"
+        },
+        {
+            "name": "keyword.primitive.adl",
+            "match": "\\b(?:Int8|Int16|Int32|Int64|Word8|Word16|Word32|Word64|Bool|Void|Float|Double|String|Bytes|Json)\\b"
+        },
+        {
+            "name": "keyword.other.adl",
+            "match": "\\b(?:=|\\.|;|{|}|\\[|\\])\\b"
+        },
+        {
+            "name": "entity.name.type.adl",
+            "match": "\\b[A-Z][A-Za-z0-9_]*\\b"
+        },
+        {
+            "name": "variable.parameter.adl",
+            "match": "\\b[a-z][A-Za-z0-9_]*\\b"
+        }
+    ],
+    "scopeName": "source.adl"
 }
