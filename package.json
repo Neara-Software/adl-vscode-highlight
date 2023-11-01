@@ -1,0 +1,25 @@
+{
+  "name": "adl-language",
+  "displayName": "adl-language",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "adl",
+      "aliases": ["ADL", "adl"],
+      "extensions": [".adl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "adl",
+      "scopeName": "",
+      "path": "./syntaxes/adl.tmLanguage.json"
+    }]
+  }
+}
